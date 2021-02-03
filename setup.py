@@ -26,7 +26,7 @@ def read(filename):
 
 
 setup(
-    install_requires=['scikit-learn', 'numpy'],
+    install_requires=['scikit-learn', 'numpy', 'six'],
     maintainer='Kenneth Lim',
     maintainer_email='me@kenlimmj.com',
     classifiers=[
@@ -44,10 +44,10 @@ setup(
     ],
     description='An implementation of Monroe et. al\'s Fightin\' Words Analysis',
     long_description=read('README.rst'),
-    download_url='https://github.com/kenlimmj/fightin-words/tarball/' + get_version('fightin-words/fightin-words.py'),
+    download_url='https://github.com/kenlimmj/fightin-words/tarball/' + get_version('fightinwords/fightinwords.py'),
     keywords=['nlp', 'fightin words', 'fightin', 'words'],
-    name='fightin-words',
-    packages=['fightin-words'],
+    name='fightinwords',
+    packages=['fightinwords'],
     url='https://github.com/kenlimmj/fightin-words',
-    version=get_version('fightin-words/fightin-words.py')
+    version=get_version('fightinwords/fightinwords.py')
 )
